@@ -1,9 +1,29 @@
 # OpenLane Installation Guide
 
-This guide provides step-by-step instructions to install Docker and OpenLane on an Ubuntu-based system.
+This guide provides step-by-step instructions to install Docker and OpenLane on an Ubuntu-based system running under WSL (Windows Subsystem for Linux).
 
 ---
 
+## 🐧 Install WSL and Ubuntu (for Windows Users)
+
+> **Skip this step if you're already using native Ubuntu or Linux.**
+
+1. Open PowerShell as Administrator and run:
+    ```powershell
+    wsl --install
+    ```
+
+2. Restart your system when prompted.
+
+3. Once installed, open Ubuntu from the Start Menu and complete the setup (username, password, etc.).
+
+4. Update your package list:
+    ```sh
+    sudo apt-get update
+    sudo apt-get upgrade
+    ```
+
+---
 ## 🐳 Installing Docker
 
 ### Step 1: Set Up Docker Repository
