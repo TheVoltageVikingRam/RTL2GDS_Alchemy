@@ -27,15 +27,33 @@ The following tools were installed for RTL synthesis, simulation, circuit analys
 
 Purpose: Converts RTL code into gate-level representations.
 
-✅ Installation:
+## ✅ Yosys Installation
+
+Follow the steps below to install **Yosys** on Ubuntu/Debian-based systems:
+
+```bash
+# Update package lists
 sudo apt-get update
+
+# Clone Yosys repository
 git clone https://github.com/YosysHQ/yosys.git
 cd yosys
+
+# Install required dependencies
 sudo apt install make
-sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev
+sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev \
+    libffi-dev git graphviz xdot pkg-config python3 \
+    libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev
+
+# Configure build
 make config-gcc
+
+# Build Yosys
 make
+
+# Install Yosys system-wide
 sudo make install
+
 
 🔍 Verification:
 yosys -v
