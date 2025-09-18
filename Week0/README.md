@@ -30,7 +30,7 @@ The following tools were installed for RTL synthesis, simulation, circuit analys
 **Purpose**: Yosys is used for RTL synthesis, converting RTL code into gate-level representations.
 
 #### **Installation**:
-```bash
+
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys
