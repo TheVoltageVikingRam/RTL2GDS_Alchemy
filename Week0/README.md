@@ -69,5 +69,3 @@ $ sudo apt install gtkwave
 
 <img width="1008" alt="gtkwave1" src="https://github.com/sukanyasmeher/sfal-vsd/assets/166566124/1e0c0704-f9a8-4ce4-b364-55a1fb0fc9ca">
 </details>
-
-<details>
