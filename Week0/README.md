@@ -73,3 +73,16 @@ $ sudo apt install gtkwave
   <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/gtkwave_installed.png" 
        alt="GTKWave Installed" width="600"/>
 </p>
+
+
+## Ngspice
+```
+$ sudo apt update
+$ sudo apt install gtkwave
+```
+## 📷 Installation Verification
+
+<p align="center">
+  <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/ngspice_installed.png" 
+       alt="ngspice Installed" width="600"/>
+</p>
