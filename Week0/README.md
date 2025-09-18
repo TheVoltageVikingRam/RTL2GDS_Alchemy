@@ -54,8 +54,12 @@ $ sudo make install
 ```
 $ sudo apt-get install iverilog
 ```
-<img width="702" alt="iverilog" src="https://github.com/sukanyasmeher/sfal-vsd/assets/166566124/e660c9fc-0d6d-4ab7-b75f-9992133771ef">
+## 📷 Installation Verification
 
+<p align="center">
+  <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/yosys_installed.png" 
+       alt="Iverilog Installed" width="600"/>
+</p>
 ## GTKWave
 ```
 $ sudo apt update
