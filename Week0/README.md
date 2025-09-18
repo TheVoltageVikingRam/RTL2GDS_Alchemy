@@ -67,7 +67,9 @@ $ sudo apt-get install iverilog
 $ sudo apt update
 $ sudo apt install gtkwave
 ```
-<img width="604" alt="gtkwave2" src="https://github.com/sukanyasmeher/sfal-vsd/assets/166566124/843a73bc-20ec-4417-bdc8-883caa6a299b">
+## 📷 Installation Verification
 
-<img width="1008" alt="gtkwave1" src="https://github.com/sukanyasmeher/sfal-vsd/assets/166566124/1e0c0704-f9a8-4ce4-b364-55a1fb0fc9ca">
-</details>
+<p align="center">
+  <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/gtkwave_installed.png" 
+       alt="GTKWave Installed" width="600"/>
+</p>
