@@ -60,6 +60,8 @@ $ sudo apt-get install iverilog
   <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/iverilog_installed.png" 
        alt="Iverilog Installed" width="600"/>
 </p>
+
+
 ## GTKWave
 ```
 $ sudo apt update
