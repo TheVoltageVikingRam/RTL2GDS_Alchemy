@@ -88,8 +88,6 @@ $ sudo apt install gtkwave
 </p>
 
 
-# 🛠️ Day 0 – Tools Installation
-
 ## ✅ Magic VLSI Installation
 
 [Magic VLSI](http://opencircuitdesign.com/magic/) is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.  
@@ -118,3 +116,10 @@ make
 
 # Install system-wide
 sudo make install
+```
+## 📷 Installation Verification
+
+<p align="center">
+  <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/magic_vlsi_installed.png" 
+       alt="magic vlsi Installed" width="600"/>
+</p>
