@@ -86,3 +86,35 @@ $ sudo apt install gtkwave
   <img src="https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/blob/main/Week0/assets/ngspice_installed.png" 
        alt="ngspice Installed" width="600"/>
 </p>
+
+
+# 🛠️ Day 0 – Tools Installation
+
+## ✅ Magic VLSI Installation
+
+[Magic VLSI](http://opencircuitdesign.com/magic/) is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.  
+Follow the steps below to install Magic on an Ubuntu/Debian system:
+
+```bash
+# Install required dependencies
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+
+# Clone Magic repository
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+
+# Configure build
+./configure
+
+# Build Magic
+make
+
+# Install system-wide
+sudo make install
