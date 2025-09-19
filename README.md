@@ -28,7 +28,6 @@ This repository documents my **week-by-week progress** with tasks inside each we
 </div>
 
 ---
-
 ## 📅 **Week 0 — Setup & Tools**
 
 <details>
@@ -42,7 +41,7 @@ This week focuses on preparing the development environment with essential open-s
 
 | Task | Description | Tools Installed | Status |
 |------|-------------|----------------|---------|
-| **Task 0** | 🛠️ [Tools Installation]((https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/tree/main/Week0)) | **Complete EDA Toolchain Setup** | ✅ Done |
+| **Task 0** | 🛠️ [Tools Installation](https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/tree/main/Week0) | **Complete EDA Toolchain Setup** | ✅ Done |
 
 ### 📦 **Tools Installed in Week 0 - Task 0**
 
