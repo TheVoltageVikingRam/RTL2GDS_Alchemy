@@ -84,30 +84,7 @@ This week focuses on preparing the development environment with essential open-s
 
 I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLSI System Design (VSD)](https://vsdiat.vlsisystemdesign.com/)** for the opportunity to participate in the ongoing **RISC-V SoC Tapeout Program**.
 
-### 🤝 **Institutional Partners**
 
-I also acknowledge the invaluable support of:
-
-| Organization | Role | Impact |
-|--------------|------|--------|
-| 🌐 **RISC-V International** | Open ISA Leadership | Global RISC-V Ecosystem |
-| 🇮🇳 **India Semiconductor Mission (ISM)** | Government Initiative | National Semiconductor Strategy |
-| 🏭 **VLSI Society of India (VSI)** | Industry Body | Professional Development |
-| 🔧 **[Efabless](https://github.com/efabless)** | Open-Source Silicon | Tapeout Platform |
-
-</div>
-
-<div align="center">
-
-### 🌟 **Mission Statement**
-
-> *"Empowering the next generation of semiconductor engineers through hands-on experience with open-source tools and collaborative silicon design."*
-
-</div>
-
----
-
-<div align="center">
 
 ## 📈 **Weekly Progress Tracker**
 
