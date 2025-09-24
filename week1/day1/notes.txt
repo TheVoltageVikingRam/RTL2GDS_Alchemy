@@ -74,3 +74,22 @@ Why do we need slow cells?
 -Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD
 -The collection forms the .lib
 
+Faster Cells vs Slower Cells
+-Load in Digital Logic circuit -> Capacitance
+-Faster the charging / discharging of capacitance -> Lesser the cell delay
+
+---To charge/discharge the capacitance fast, we need transistors capable of sourcing more current
+---Wider transistors -> Low delay -> More area and power as well!!
+---Narrow transistors-> More Dely -> Less area and Power
+---Faster cells do not come free, they come at penality of area and power.
+
+Selection of cells
+
+-Need to guide the synthesizer to select the flavor of ceells that is optimum for the implementation of logiv circuit
+-More use of faster cells
+--Bad cicruit in terms of power and area
+---Hold time violations
+
+-More use of slower cells
+--Sluggish circuit, may not meet the performance need
+- The guidance offered to the sythesizer --> "Constraints"
