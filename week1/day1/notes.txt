@@ -93,3 +93,6 @@ Selection of cells
 -More use of slower cells
 --Sluggish circuit, may not meet the performance need
 - The guidance offered to the sythesizer --> "Constraints"
+
+Synthesis (illustration)
+
