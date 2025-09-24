@@ -59,3 +59,8 @@ What is .lib
 
 -4 input And gate
 
+Why do we need different flavours of gate
+
+- Combinational delay in logic path determines the maximum speed of operation of logic circuit
+-So we need cells that work fast toTcomi small
+`Are faster cells sufficient?
