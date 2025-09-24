@@ -66,3 +66,11 @@ Why do we need different flavours of gate
 `Are faster cells sufficient?
 
 Tclk > Tcq_q + Tcombi + Tsetup_b
+
+
+Why do we need slow cells?
+
+-To ensure there are no "HOLD" issues at DFF_B , we need cells work slowly
+-Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD
+-The collection forms the .lib
+
