@@ -1,0 +1,61 @@
+Synthesizer
+Tool used for converting the RTL to netlist
+Yosys is the synthesizer used in this course
+
+read verilog
+/
+Design -----> Yosys -----> netlist file ----> write_verilog
+.lib ---------|
+\
+read_liberty
+
+Verify the synthesis
+NETLIST
+            =====> iverilog=======> vcd file ----->gtkwave (should be same as output observed during RTL simulation)
+TESTBENCH
+
+The set of primary inputs /  primary outputs will remain same between the RTL design and the sythesized netlist ===> same testbench can be used.
+
+RTL design
+-RTL design
+ --Behavioural representation of the required speicification
+
+module sample_code ( 
+input clk, rst, 
+output result, done);
+
+always @ (posedge clk, posedge rst)
+if (rst)
+---
+else
+---
+endmodule
+--------
+--------
+
+Synthesis
+
+-RTL to Gate level
+translation
+
+-The design is converted into gates and the connections are made between
+--This is given out as a file called netlist
+
+What is .lib
+
+.lib
+-collection of logical modules.
+-includes basic gates like And, Or, Not etc.
+-Different flavors of the same gate
+-2 input And gate
+-Slow
+-Medium
+-Fast
+
+-3 input And gate
+-Slow
+-Medium
+-Fast
+
+-4 input And gate
+
