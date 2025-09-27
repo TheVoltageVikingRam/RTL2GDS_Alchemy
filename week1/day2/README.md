@@ -1,4 +1,3 @@
-
 # Day 2: Timing Libraries, Synthesis Approaches, and Efficient Flip-Flop Coding
 
 Welcome to Day 2 of the RTL Workshop. This day covers three crucial topics:
@@ -258,9 +257,10 @@ endmodule
    show
    ```
 
-For more detailed netlist visualization, see the SVG output: ![Netlist Diagram](output.svg)
+For more detailed netlist visualization, see the SVG output:
 
-![Asynchronous Reset Synthesized Netlist](ss-dff_asyncres_syntehsized_netlist_mapped.png)
+<img src="output.svg" alt="Netlist Diagram" />
+
 
 ---
 
