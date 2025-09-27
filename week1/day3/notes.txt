@@ -1,0 +1,26 @@
+Combinational logic optmisation
+
+Squeezing the logic to get the most optmized deisgn
+-Area and power savings
+
+Constant propagation
+-Direct optmization
+
+Boolean Logic Optmization
+assign y = a?(b?c:(c?a:0)):(!c)
+
+optmized one
+y=(a^c);
+
+Sequential Logic Optimization
+-Basic
+-Advancement
+-state optimization
+-Retiming
+-Seuqntial Logic Cloning (Floor plan aware synthesis)
+
+Sequential Constant 
+
+
+
+
