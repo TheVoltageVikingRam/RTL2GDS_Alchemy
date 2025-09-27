@@ -261,7 +261,6 @@ For more detailed netlist visualization, see the SVG output:
 
 <img src="output.svg" alt="Netlist Diagram" />
 
-![Asynchronous Reset Synthesized Netlist](ss-dff_asyncres_syntehsized_netlist_mapped.png)
 
 ---
 
