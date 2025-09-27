@@ -22,6 +22,4 @@ Sequential Logic Optimization
 Sequential Constant 
 State optimization---> Optimization of unused states
 Cloning [Physical aware synthesis)              Retiming
- 
-
 
