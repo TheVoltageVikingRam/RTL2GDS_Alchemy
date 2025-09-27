@@ -1,2 +1,3 @@
 PVT (Process Voltage Temperature)
 Process: Variations due to fabrications
+we synthesize submodules of a top module in order to ensure the many instances of thst are working good. It is preferred when we have multiple instances of the same module. Also called divide and concure approach. (giving portion by portion which is then stiched to get the top level module)
