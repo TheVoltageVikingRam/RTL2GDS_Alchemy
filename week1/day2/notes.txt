@@ -1,0 +1,2 @@
+PVT (Process Voltage Temperature)
+Process: Variations due to fabrications
