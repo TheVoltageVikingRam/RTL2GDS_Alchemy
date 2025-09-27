@@ -226,6 +226,11 @@ I successfully synthesized my `good_mux` design using Yosys! Here's my step-by-s
    write_verilog -noattr good_mux_netlist.v
    ```
 
+### My Synthesis Results
+I successfully generated the gate-level netlist and captured the synthesized circuit diagram. The image below shows my synthesized multiplexer design:
+
+![My Synthesized Netlist](synthesized_netlist.png)
+
 ---
 
 ## 8. Verification of My Synthesis
@@ -251,4 +256,3 @@ The output I observed during netlist simulation matched perfectly with my RTL si
 - **Synthesis:** RTL to gate-level conversion (Yosys) - I successfully converted my design
 - **.lib files:** Technology libraries with multiple gate flavors - I understand the importance of different gate variants
 - **Constraints:** Guidance for optimal cell selection - I learned why synthesis needs guidance
-
