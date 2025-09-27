@@ -20,7 +20,8 @@ Sequential Logic Optimization
 -Seuqntial Logic Cloning (Floor plan aware synthesis)
 
 Sequential Constant 
-
-
+State optimization---> Optimization of unused states
+Cloning [Physical aware synthesis)              Retiming
+ 
 
 
