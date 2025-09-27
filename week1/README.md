@@ -36,7 +36,7 @@ yosys       # Open-source synthesis framework
 
 ## Design Portfolio Structure
 
-### [Day 1: RTL Design Foundations](week1/day1/)
+### [Day 1: RTL Design Foundations](day1/)
 **Demonstrated Skills:**
 - Verilog language proficiency and best practices
 - Hierarchical design methodology and module architecture
@@ -44,7 +44,7 @@ yosys       # Open-source synthesis framework
 - Simulation flow optimization and debugging
 - Basic synthesis flow implementation
 
-### [Day 2: Advanced Synthesis Techniques](week1/day2/)
+### [Day 2: Advanced Synthesis Techniques](day2/)
 **Technical Focus:**
 - Timing library analysis and SKY130 PDK utilization
 - Hierarchical vs. flattened synthesis trade-offs
@@ -52,7 +52,7 @@ yosys       # Open-source synthesis framework
 - Process, voltage, and temperature (PVT) awareness
 - Library characterization and cell optimization
 
-### [Day 3: Circuit Optimization Mastery](week1/day3/)
+### [Day 3: Circuit Optimization Mastery](day3/)
 **Optimization Expertise:**
 - Constant propagation and logic minimization techniques
 - Sequential circuit optimization and state reduction
@@ -60,7 +60,7 @@ yosys       # Open-source synthesis framework
 - Multi-objective optimization (area, power, timing)
 - Synthesis directive utilization for targeted optimization
 
-### [Day 4: Verification and Validation](week1/day4/)
+### [Day 4: Verification and Validation](day4/)
 **Quality Assurance Proficiency:**
 - Gate-level simulation (GLS) implementation and correlation
 - Blocking vs. non-blocking assignment impact analysis
@@ -68,7 +68,7 @@ yosys       # Open-source synthesis framework
 - Timing violation analysis and debugging methodologies
 - Comprehensive functional verification strategies
 
-### [Day 5: Expert-Level Synthesis](week1/day5/)
+### [Day 5: Expert-Level Synthesis](day5/)
 **Advanced Implementation:**
 - Multi-corner synthesis and optimization
 - Power-aware synthesis techniques and low-power design
@@ -158,4 +158,4 @@ This repository demonstrates practical skills directly applicable to:
 - High-performance computing circuit optimization
 - Low-power embedded system implementation
 
-The implementations reflect current industry practices while showcasing proficiency with both fundamental concepts and advanced optimization techniques used in commercial digital design environme
+The implementations reflect current industry practices while showcasing proficiency with both fundamental concepts and advanced optimization techniques used in commercial digital design environments.
