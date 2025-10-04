@@ -1,7 +1,4 @@
-`ifndef SANDPIPER_GEN_VH
-`define SANDPIPER_GEN_VH
-
-// Clock and reset signals
-`define BOGUS_USE(var)
-
+// This just verifies that sandpiper.vh has been included.
+`ifndef SANDPIPER_VH
+  !!!ERROR: SandPiper project's sp_<proj>.vh file must include sandpiper.vh.
 `endif
