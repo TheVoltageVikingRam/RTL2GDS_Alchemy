@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# Fix vsdbabysoc.v - remove the 'cat' command wrapper
 cat > src/module/vsdbabysoc.v << 'EOF'
 module vsdbabysoc (
     output wire OUT,
@@ -36,3 +39,30 @@ avsddac dac (
 
 endmodule
 EOF
+
+# Create output directory
+mkdir -p output/pre_synth_sim
+
+# Run iverilog compilation
+echo "Compiling design..."
+iverilog -o output/pre_synth_sim/pre_synth_sim.out \
+    -DPRE_SYNTH_SIM \
+    -I src/include \
+    -I src/module \
+    src/module/testbench.v \
+    src/module/vsdbabysoc.v \
+    src/module/rvmyth.v \
+    src/module/avsdpll.v \
+    src/module/avsddac.v \
+    src/module/clk_gate.v
+
+if [ $? -eq 0 ]; then
+    echo "Compilation successful!"
+    echo "Running simulation..."
+    cd output/pre_synth_sim
+    ./pre_synth_sim.out
+    echo "Simulation complete! VCD file: pre_synth_sim.vcd"
+else
+    echo "Compilation failed!"
+    exit 1
+fi
