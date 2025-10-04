@@ -1,4 +1,3 @@
-cat > src/module/vsdbabysoc.v << 'EOF'
 module vsdbabysoc (
     output wire OUT,
     input wire reset,
@@ -35,4 +34,3 @@ avsddac dac (
 );
 
 endmodule
-EOF
