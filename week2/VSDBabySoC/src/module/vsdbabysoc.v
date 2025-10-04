@@ -1,46 +1,38 @@
+cat > src/module/vsdbabysoc.v << 'EOF'
 module vsdbabysoc (
-	output wire OUT,
-	//
-	input wire reset,
-	//
-	input wire VCO_IN,
-	input wire ENb_CP,
-	input wire ENb_VCO,
-	input wire REF,
-	//
-	input wire VREFL
-	input wire VREFH
+    output wire OUT,
+    input wire reset,
+    input wire VCO_IN,
+    input wire ENb_CP,
+    input wire ENb_VCO,
+    input wire REF,
+    input wire VREFL,
+    input wire VREFH
 );
-
 
 wire CLK;
 wire [9:0] RV_TO_DAC;
 
-rvmyth_core (
-.OUT(RV_TO_DAC),
-.CLK(CLK),
-.reset(reset)
+rvmyth core (
+    .OUT(RV_TO_DAC),
+    .CLK(CLK),
+    .reset(reset)
 );
-
 
 avsdpll pll (
- .CLK(CLK),
- .VCO(VCO_IN),
- .ENb_CP (ENb_CP),
- .ENb_VCO(ENb_VCO),
- .REF(REF)
+    .CLK(CLK),
+    .VCO_IN(VCO_IN),
+    .ENb_CP(ENb_CP),
+    .ENb_VCO(ENb_VCO),
+    .REF(REF)
 );
 
-
 avsddac dac (
- .OUT(OUT),
- .D(RV_TO_DAC).
- .VREFL(VREFL),
- .VREFH(VREFH)
+    .OUT(OUT),
+    .D(RV_TO_DAC),
+    .VREFL(VREFL),
+    .VREFH(VREFH)
 );
 
 endmodule
-
-
-
-	
+EOF
