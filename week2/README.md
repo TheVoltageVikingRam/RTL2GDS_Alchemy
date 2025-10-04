@@ -167,13 +167,63 @@ This continuous feedback mechanism automatically compensates for process variati
 
 The DAC bridges the digital and analog worlds, converting processor output into continuous voltages suitable for real-world interfacing. This component makes the SoC's operation tangible—you can measure the analog output with an oscilloscope and see the processor's computation directly.
 
-**Architecture Choice: R-2R Ladder**
+**DAC Specifications:**
+- **Resolution**: 10 bits (1024 distinct output levels)
+- **Architecture**: R-2R resistor ladder network
+- **Input**: Parallel 10-bit digital word from r17 register
+- **Output**: Analog voltage proportional to digital input
+- **Reference**: External voltage reference for full-scale output
+
+**DAC Architecture Comparison:**
+
+Digital-to-analog conversion can be implemented using several architectures, each with distinct advantages and tradeoffs. Understanding these options reveals why BabySoC uses the R-2R ladder approach.
+
+**Binary Weighted Resistor DAC**
+
+![Binary Weighted DAC](binary_weighted_resistors.jpg)
+
+This straightforward approach uses resistors with values in binary ratios: R, 2R, 4R, 8R, 16R, and so on. Each bit controls a switch connecting its corresponding resistor to the reference voltage. The currents from all switched resistors sum at the output, with each bit contributing a binary-weighted amount.
+
+For a 10-bit converter, the resistor values would span from R to 512R—a 512:1 ratio. The most significant bit (MSB) connects through resistor R (contributing the most current), while the least significant bit (LSB) connects through 512R (contributing 1/512th the current).
+
+*Advantages:*
+- Conceptually simple with direct bit-to-current mapping
+- Fast switching speed since each bit independently controls current
+- Straightforward analysis and design
+
+*Disadvantages:*
+- Wide resistor value range extremely difficult to match accurately in IC fabrication
+- A 10-bit design requires 512:1 resistor ratio with tight tolerances
+- Even 1% resistor variations cause significant linearity errors and missing codes
+- Poor scalability—each additional bit doubles the range requirement
+- High-value resistors occupy large die area and have parasitic capacitance issues
+
+**R-2R Ladder DAC (Used in VSDBabySoC)**
 
 ![R-2R Ladder DAC](R-2R_Ladder_DAC.webp)
 
-BabySoC employs an R-2R resistor ladder rather than binary-weighted resistors for compelling reasons. A binary-weighted design requires resistor values spanning a wide range (R, 2R, 4R, 8R... up to 512R for 10 bits), making accurate matching extremely difficult in IC manufacturing. Even 1% resistor variations cause significant conversion errors.
+The R-2R ladder represents an elegant solution to the binary-weighted DAC's matching problems. This architecture uses only two resistor values—R and 2R—arranged in a repeating ladder network. Despite using only two values, the ladder structure creates binary-weighted current division at each node through clever circuit topology.
 
-The R-2R ladder elegantly solves this by using only two resistor values in a repeating network structure. Current division at each node creates binary-weighted contributions, but the narrow value range (only R and 2R) enables much better matching in silicon. This architecture scales gracefully to any resolution—adding more bits simply extends the ladder.
+Each bit controls a switch that connects its ladder node to either the reference voltage (bit=1) or ground (bit=0). The ladder network's symmetry ensures that each bit contributes exactly half the current of the bit to its left, creating the required binary weighting: MSB contributes 1/2, next bit contributes 1/4, next 1/8, and so on down to the LSB contributing 1/1024.
+
+*Advantages:*
+- Only two resistor values needed—dramatically easier to match accurately
+- R and 2R can be created from identical unit resistors (2R = two R resistors in series)
+- Excellent scalability to any resolution—just add more ladder sections
+- Much lower sensitivity to component variations compared to binary-weighted
+- Compact layout in IC implementation with repeating structure
+- Resistor matching errors don't accumulate as severely
+
+*Disadvantages:*
+- Slightly more complex circuit analysis required
+- Requires accurate R and 2R ratio, but this is achievable with unit resistors
+- More switches needed (2N for N bits) compared to binary-weighted (N switches)
+
+**Why R-2R for BabySoC?**
+
+The R-2R ladder's superior matching characteristics make it the clear choice for integrated circuit implementation. In Sky130 technology, creating two resistors with a precise 2:1 ratio is straightforward using unit resistor cells. Attempting to create resistors with 512:1 ratio while maintaining accuracy would be nearly impossible with the same manufacturing process variations.
+
+Furthermore, the R-2R architecture teaches important analog design principles: how clever topology can solve matching problems, how repeating structures simplify layout, and how to achieve precision through symmetry rather than absolute accuracy. These concepts apply broadly across analog and mixed-signal design.
 
 **Operation:**
 
