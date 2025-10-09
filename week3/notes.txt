@@ -1,0 +1,22 @@
+Types of setup/hold analysis
+
+1.reg2reg
+2.in2reg
+3.reg2out
+4.in2out
+5.clock gating
+6.recovery/removal
+7.data-to-data
+8.latch (time borrow/time given)
+
+Slew/Transition analysis
+1.Data (max/min)
+2.Clock (max/min)
+
+Load Analysis
+1.Fanout(max/min)
+2.Capacitance (max/min)
+
+Clock analysis
+1.Skew
+2.Pulse width
