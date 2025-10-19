@@ -44,18 +44,6 @@ This repository documents a hands-on journey through analog and digital CMOS cir
 | **SkyWater 130nm PDK** | Open-source process design kit | Clone from [SkyWater PDK repo](https://github.com/google/skywater-pdk) |
 | **Python 3.x** (optional) | Post-processing and plotting | `sudo apt install python3` |
 
-### Getting Started
-
-```bash
-# Clone the SkyWater PDK models
-git clone https://github.com/google/skywater-pdk.git
-
-# Navigate to your working directory
-cd week4
-
-# Verify ngspice installation
-ngspice --version
-```
 
 ---
 
